@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Airbridge - Airbus Helicopters</title>
+    <!--  
+    Favicons
+
+    =============================================
+    -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,800,800i&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin-ext" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">
+          <img src="assets/images/loading_logo.png">
+        </div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="" href="index.html"><img src="assets/images/airbridge_logo.png" class="ab-logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="" href="hakkimizda.html" data-toggle="">Hakkımızda</a>
+              <li class="dropdown"><a class="" href="helikopter-modelleri.html" data-toggle="">Helikopter Modelleri</a>
+              <li class="dropdown"><a class="" href="http://www.airbuscorporatehelicopters.com/website/en/ref/home.html" target="_blank" data-toggle="">Corporate Helicopters</a>
+              <li class="dropdown"><a class="" href="satis-pazarlama.html" data-toggle="">Satış ve Pazarlama</a>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Satış Sonrası Hizmetler</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdownFF"><a href="bakim.html">Bakım</a></li>
+                  <li class="dropdownFF"><a href="yedek-parca.html">Yedek Parça</a></li>
+                  <li class="dropdownFF"><a href="teknik-destek.html">Teknik Destek</a></li>
+                  
+                  <li class="hcareFF dropdownFF"><a href="hcare.html">HCare</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="" href="iletisim.html" data-toggle="">İletişim</a></li>
+              <li class="dropdown">
+                <div class="lang-area">
+                  <a href="eng/en.html" class="enArea"><img src="assets/images/gb.png"></a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="home-section home-full-height bg-dark-10" id="home">
+        <div class="video-overlay"></div>
+        <div class="mobileVideoBg"></div>
+          <div class="video-player">
+            <video preload="none" autoplay="autoplay" loop="loop" id="myVideo" volume="0" muted>
+              <source src="assets/web_tr.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="video-controls-box">
+            <div class="container">
+              <div class="video-controls">
+                <a class="fa fa-volume-off" id="video-volume" href="#">&nbsp;</a>
+                <a class="fa fa-pause" id="video-play" onclick="playPause()" href="#">&nbsp;</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <script>
+
+        function playPause(){
+          var video = document.getElementById('myVideo');
+
+          if(video.paused){
+            video.play();
+            $('#video-play').toggleClass('fa-pause fa-play');
+          }else{
+            video.pause();
+            $('#video-play').toggleClass('fa-play fa-pause');
+          }
+        }
+
+        function Volume(){
+          var video = document.getElementById('myVideo');
+
+          if(video.volume == 0){
+            video.volume = 1;
+            $('#video-volume').toggleClass('fa-volume-off fa-volume-up');
+          }else{
+            video.volume = 0;
+            $('#video-volume').toggleClass('fa-volume-up fa-volume-off');
+          }
+        }
+      </script>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+  </main></body>
+</html>
